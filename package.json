@@ -4,6 +4,14 @@
   "description": "Vue.js App - GraphQL  featuring Apollo Client 3.0 & Launchpad this is based on the work done by @peggyrayzis\n\nLaunchpad: https://launchpad.graphql.com/v7mnw3m03",
   "keywords": [],
   "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --inline --progress --config build/webpack.dev.conf.js",
+    "start": "npm run dev",
+    "unit": "jest --config test/unit/jest.conf.js --coverage",
+    "test": "npm run unit",
+    "lint": "eslint --ext .js,.vue src test/unit",
+    "build": "node build/build.js"
+  },
   "dependencies": {
     "apollo-cache-inmemory": "1.2.8",
     "apollo-client": "2.4.0",
@@ -14,8 +22,7 @@
     "vue-apollo": "3.0.0-beta.19",
     "vue-router": "3.0.1",
     "vue-simple-spinner": "1.2.8"
-  }
-},
+  },
   "devDependencies": {
     "autoprefixer": "^7.1.2",
     "babel-core": "^6.22.1",
