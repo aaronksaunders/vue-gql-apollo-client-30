@@ -1,4 +1,4 @@
-# test-project
+# VueJS w/ GraphQL Client 3.0
 
 > A Vue.js project
 
